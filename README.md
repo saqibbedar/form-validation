@@ -4,14 +4,14 @@ This repository contains a simple HTML form with JavaScript validation. The form
 
 # Demo
 
-Check out live demo [here →](https://saqibbedar.github.io/custom-video-player/).
+Check out live demo [here →](https://saqibbedar.github.io/form-validation/).
 
 ## Getting Started
 
 To get started with this project, simply clone this repository:
 
 ```md 
-git clone https://github.com/saqibbedar/CS-Student-Search-Engine.git
+git clone https://github.com/saqibbedar/form-validation
 ```
 
 ## Support Me
