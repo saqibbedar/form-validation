@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+ 
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+a {
+    text-decoration: none;
+}
+input[type="password" i] {
+    -webkit-text-security: disc ;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+}
+.password-input {
+    -webkit-text-security: disc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    max-width: fit-content;
+    margin: auto;
+    flex-direction: column;
+    gap: 8px;
+}
+h1{
+    font-size: 8vw;
+}
+form > input , button {
+    padding: 12px;
+    max-width: 100%;
+    min-width: 44vw;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    position: relative;
+}
+form > input {
+    border: solid 2.5px rgba(103, 103, 103, 0.875);
+    outline: none;
+    transition: 0.3s ease;
+}
+form > input:focus-visible{
+    border: 2.5px solid green;
+}
+#error-msg{
+    width: 100%;
+    padding: 0 0.7vw;
+    color: red;
+    font-weight: 500;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: all 0.75s ease;
+}
+.active-error{
+    height: auto !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+form > button{
+    font-weight: 500;
+    background: green;
+    color: white;
+    cursor: pointer;
+    border: solid 1.5px rgba(103, 103, 103, 0);
+    outline: none;
+    margin-top: 12px;
+    transition: all ease;
+}
+form > button:active{
+    scale: 0.99;
+}
+@media (width > 700px) {
+    h1{
+        font-size: 4.5vw;
+    }
+}
+@media (width < 700px) {
+    form > input , button {
+        min-width: 80vw;
+    }
+}
